@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS & BEM</title>
+  <style type="text/css">
+  .button {
+  padding:2rem 2rem;
+  background-image: linear-gradient(to bottom, #506ca2, #cccccc);
+  text-shadow:1px 1px 1px rgba(0,0,0,1);
+  border-radius:20px;
+  color:#ffffff;
+  font-size:1rem;
+}
+
+.button--secondary {
+background-image: linear-gradient(to bottom, #dc52de, #cccccc);
+}
+
+.button--secondary__large {
+background-image: linear-gradient(to bottom, #dc52de, #cccccc);
+  width:250px;
+}
+  </style>
+</head>
+<body>
+  <button class="button">Primary button</button>
+<button class="button button--secondary">Secondary button</button>
+<button class="button button--secondary__large">Tertiary button</button>
+</body>
+</html>
